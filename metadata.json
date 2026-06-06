@@ -1,0 +1,6 @@
+{
+  "name": "Jigwe Mining",
+  "description": "Zambia-based mining company specializing in mineral extraction, processing, fuel distribution, logistics, commodity consultancy, and ethical gold sourcing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
