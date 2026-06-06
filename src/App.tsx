@@ -4,13 +4,13 @@ import {
   ArrowRight, Send, Facebook, Twitter, Linkedin, Instagram, ShieldCheck,
 } from "lucide-react";
 import heroImg from "@/assets/hero-mining.jpg";
-import ceoImg from "@/assets/images/boardroom_executive_1780761465379.png";
-import g1 from "@/assets/images/mining_workers_1780761449675.png";
-import g2 from "@/assets/images/gold_melting_crucible_1780761402114.png";
-import g3 from "@/assets/images/mining_excavator_quarry_1780761436843.png";
-import g4 from "@/assets/images/portfolio/portfolio-thumb-08.jpeg";
-import g5 from "@/assets/images/gold_assay_bars_1780761421772.png";
-import g6 from "@/assets/images/mining_crusher_operator_1780761484943.png";
+import ceoImg from "@/assets/images/about-thumb-08.png";
+import g1 from "@/assets/images/portfolio/portfolio-thumb-10.jpeg";
+import g2 from "@/assets/images/portfolio/portfolio-thumb-01.jpeg";
+import g3 from "@/assets/images/portfolio/portfolio-thumb-06.jpeg";
+import g4 from "@/assets/images/portfolio/portfolio-thumb-07.jpeg";
+import g5 from "@/assets/images/portfolio/portfolio-thumb-08.jpeg";
+import g6 from "@/assets/images/portfolio/portfolio-thumb-09.jpeg";
 import brand1 from "@/assets/images/brand/brand-thumb-21.png";
 import brand2 from "@/assets/images/brand/brand-thumb-22.png";
 import brand3 from "@/assets/images/brand/brand-thumb-23.png";
@@ -59,7 +59,7 @@ const partners = [
   { logo: brand4, name: "Industrie", role: "Key Logistics & Processing Client" },
 ];
 
-import jigweLogo from "@/assets/images/jigwe_logo_official_1780761709747.png";
+import jigweLogo from "@/assets/images/brand/jigwe-logo.png";
 
 function Logo({ light = false }: { light?: boolean }) {
   return (
