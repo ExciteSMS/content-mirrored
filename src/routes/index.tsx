@@ -6,12 +6,16 @@ import {
 } from "lucide-react";
 import heroImg from "@/assets/hero-mining.jpg";
 import ceoImg from "@/assets/ceo.jpg";
-import g1 from "@/assets/g1.jpg";
-import g2 from "@/assets/g2.jpg";
-import g3 from "@/assets/g3.jpg";
-import g4 from "@/assets/g4.jpg";
-import g5 from "@/assets/g5.jpg";
-import g6 from "@/assets/g6.jpg";
+import g1 from "@/assets/portfolio/portfolio-thumb-01.jpeg.asset.json";
+import g2 from "@/assets/portfolio/portfolio-thumb-06.jpeg.asset.json";
+import g3 from "@/assets/portfolio/portfolio-thumb-10.jpeg.asset.json";
+import g4 from "@/assets/portfolio/portfolio-thumb-08.jpeg.asset.json";
+import g5 from "@/assets/portfolio/portfolio-thumb-07.jpeg.asset.json";
+import g6 from "@/assets/portfolio/portfolio-thumb-09.jpeg.asset.json";
+import brand1 from "@/assets/brand/brand-thumb-21.png.asset.json";
+import brand2 from "@/assets/brand/brand-thumb-22.png.asset.json";
+import brand3 from "@/assets/brand/brand-thumb-23.png.asset.json";
+import brand4 from "@/assets/brand/brand-thumb-26.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -46,13 +50,14 @@ const faqs = [
 ];
 
 const gallery = [
-  { src: g1, label: "Operations", title: "Mining Site Operations" },
-  { src: g2, label: "Processing", title: "Mineral Processing" },
-  { src: g3, label: "Exploration", title: "Exploration & Surveying" },
-  { src: g4, label: "Logistics", title: "Transport & Logistics" },
-  { src: g5, label: "Trading", title: "Commodity Trading & Delivery" },
-  { src: g6, label: "Compliance", title: "Safety & Compliance Standards" },
+  { src: g1.url, label: "Operations", title: "Mining Site Operations" },
+  { src: g2.url, label: "Processing", title: "Mineral Processing" },
+  { src: g3.url, label: "Exploration", title: "Exploration & Surveying" },
+  { src: g4.url, label: "Logistics", title: "Transport & Logistics" },
+  { src: g5.url, label: "Trading", title: "Commodity Trading & Delivery" },
+  { src: g6.url, label: "Compliance", title: "Safety & Compliance Standards" },
 ];
+const partners = [brand1, brand2, brand3, brand4];
 
 function Logo({ light = false }: { light?: boolean }) {
   return (
@@ -268,9 +273,9 @@ function Index() {
             We collaborate with trusted investors, commodity traders, and logistics partners to deliver ethical, efficient mining solutions while supporting sustainable growth across Zambia and international markets.
           </p>
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
-            {["Kairos Investments", "Kairos Commodity", "Zambia Chamber", "African Minerals"].map((n) => (
-              <div key={n} className="h-20 rounded-xl border bg-card grid place-items-center text-muted-foreground font-display font-bold text-sm">
-                {n}
+            {partners.map((p) => (
+              <div key={p.url} className="h-24 rounded-xl border bg-card grid place-items-center p-5">
+                <img src={p.url} alt="Partner logo" loading="lazy" className="max-h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
               </div>
             ))}
           </div>
