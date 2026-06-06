@@ -6,12 +6,16 @@ import {
 } from "lucide-react";
 import heroImg from "@/assets/hero-mining.jpg";
 import ceoImg from "@/assets/ceo.jpg";
-import g1 from "@/assets/g1.jpg";
-import g2 from "@/assets/g2.jpg";
-import g3 from "@/assets/g3.jpg";
-import g4 from "@/assets/g4.jpg";
-import g5 from "@/assets/g5.jpg";
-import g6 from "@/assets/g6.jpg";
+import g1 from "@/assets/portfolio/portfolio-thumb-01.jpeg.asset.json";
+import g2 from "@/assets/portfolio/portfolio-thumb-06.jpeg.asset.json";
+import g3 from "@/assets/portfolio/portfolio-thumb-10.jpeg.asset.json";
+import g4 from "@/assets/portfolio/portfolio-thumb-08.jpeg.asset.json";
+import g5 from "@/assets/portfolio/portfolio-thumb-07.jpeg.asset.json";
+import g6 from "@/assets/portfolio/portfolio-thumb-09.jpeg.asset.json";
+import brand1 from "@/assets/brand/brand-thumb-21.png.asset.json";
+import brand2 from "@/assets/brand/brand-thumb-22.png.asset.json";
+import brand3 from "@/assets/brand/brand-thumb-23.png.asset.json";
+import brand4 from "@/assets/brand/brand-thumb-26.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
