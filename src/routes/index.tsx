@@ -273,9 +273,9 @@ function Index() {
             We collaborate with trusted investors, commodity traders, and logistics partners to deliver ethical, efficient mining solutions while supporting sustainable growth across Zambia and international markets.
           </p>
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
-            {["Kairos Investments", "Kairos Commodity", "Zambia Chamber", "African Minerals"].map((n) => (
-              <div key={n} className="h-20 rounded-xl border bg-card grid place-items-center text-muted-foreground font-display font-bold text-sm">
-                {n}
+            {partners.map((p) => (
+              <div key={p.url} className="h-24 rounded-xl border bg-card grid place-items-center p-5">
+                <img src={p.url} alt="Partner logo" loading="lazy" className="max-h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
               </div>
             ))}
           </div>
