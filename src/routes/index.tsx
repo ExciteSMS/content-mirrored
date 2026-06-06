@@ -59,15 +59,12 @@ const gallery = [
 ];
 const partners = [brand1, brand2, brand3, brand4];
 
+import jigweLogo from "@/assets/brand/jigwe-logo.png.asset.json";
+
 function Logo({ light = false }: { light?: boolean }) {
   return (
     <a href="#home" className="flex items-center gap-2">
-      <div className="grid place-items-center size-9 rounded-md bg-gradient-brand text-brand-foreground">
-        <Mountain className="size-5" />
-      </div>
-      <span className={`font-display font-extrabold tracking-tight text-lg ${light ? "text-white" : "text-foreground"}`}>
-        JIGWE <span className="text-brand">MINING</span>
-      </span>
+      <img src={jigweLogo.url} alt="Jigwe Mining" className={`h-10 w-auto ${light ? "brightness-0 invert" : ""}`} />
     </a>
   );
 }
