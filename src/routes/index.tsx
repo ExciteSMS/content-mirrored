@@ -50,13 +50,14 @@ const faqs = [
 ];
 
 const gallery = [
-  { src: g1, label: "Operations", title: "Mining Site Operations" },
-  { src: g2, label: "Processing", title: "Mineral Processing" },
-  { src: g3, label: "Exploration", title: "Exploration & Surveying" },
-  { src: g4, label: "Logistics", title: "Transport & Logistics" },
-  { src: g5, label: "Trading", title: "Commodity Trading & Delivery" },
-  { src: g6, label: "Compliance", title: "Safety & Compliance Standards" },
+  { src: g1.url, label: "Operations", title: "Mining Site Operations" },
+  { src: g2.url, label: "Processing", title: "Mineral Processing" },
+  { src: g3.url, label: "Exploration", title: "Exploration & Surveying" },
+  { src: g4.url, label: "Logistics", title: "Transport & Logistics" },
+  { src: g5.url, label: "Trading", title: "Commodity Trading & Delivery" },
+  { src: g6.url, label: "Compliance", title: "Safety & Compliance Standards" },
 ];
+const partners = [brand1, brand2, brand3, brand4];
 
 function Logo({ light = false }: { light?: boolean }) {
   return (
